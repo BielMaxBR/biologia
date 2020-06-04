@@ -1,5 +1,19 @@
 html {
     font-family: 'Ubuntu', sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 /* s?? */
+
+#lado {
+    background-color: grey;
+}
+
+#meio {
+    background-color: white;
+}
+#outro-lado {
+    background-color: grey;
+}
