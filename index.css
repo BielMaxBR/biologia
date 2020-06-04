@@ -1,19 +1,26 @@
-html {
+body {
     font-family: 'Ubuntu', sans-serif; 
     display: flex;
-    align-items: center;
-    justify-items: center;
+    justify-content: space-between;
+
 }
 
-/* s?? */
+div {
+    display: flex;
+}
 
 #lado {
     background-color: grey;
+    width: 80%;
 }
 
 #meio {
     background-color: white;
+    width: 80%;
+    align-items: center;
 }
 #outro-lado {
     background-color: grey;
+    width: 80%;
+
 }
