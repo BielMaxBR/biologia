@@ -1,26 +1,38 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Ubuntu', sans-serif; 
+    background-color: #E7E7E7;
+    height: 100vw;
+
+}
+header {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 8px;
+}
+
+a {
+    
+    background-color: green;
+    border: 2px solid #f5f5f5;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    font-weight: bold;
+    height: 32px;
+
+    padding: 6px 6px;
+
     display: flex;
-    justify-content: space-between;
-
-}
-
-div {
-    display: flex;
-}
-
-#lado {
-    background-color: grey;
-    width: 80%;
-}
-
-#meio {
-    background-color: white;
-    width: 80%;
+    flex-direction: column;
     align-items: center;
-}
-#outro-lado {
-    background-color: grey;
-    width: 80%;
 
+    justify-content: space-around;
+
+    text-align: center;
 }
