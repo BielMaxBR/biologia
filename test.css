@@ -3,12 +3,6 @@ body {
     background-color: #E7E7E7;
 }
 
-
-#nav
-{
-    /* container */
-    /* background-clip: green; */
-}
     #nav > a
     {
         display: none;
@@ -171,9 +165,7 @@ body {
     {
         position: relative;
     }
-        #nav > a
-        {
-        }
+
         #nav:not( :target ) > a:first-of-type,
         #nav:target > a:last-of-type
         {
