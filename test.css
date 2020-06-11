@@ -1,8 +1,13 @@
 body {
     font-family: 'Ubuntu', sans-serif; 
     background-color: #E7E7E7;
-}
 
+
+}
+a {
+    text-decoration: none;
+
+}
     #nav > a
     {
         display: none;
@@ -30,11 +35,12 @@ body {
 
 @media only screen and ( min-width: 641px ) {
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     #ul{
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
@@ -109,38 +115,24 @@ body {
         text-decoration: none;
         text-align: center;
     }
-    /* ul li
-         {
-             display: flex;
-            align-content: center;
-            flex: 1;
-        }
 
-    ul {
-        background-color: green;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 8px;
-
-    }
-    ul li a {
-
-        align-items: center;
-        font-weight: bold;
-        height: 32px;
-
-        padding: 6px 6px;
-
-        display: flex;
-        flex-direction: column;
-
-        justify-content: space-around;
-        text-align: center;
-    } */
-  
 }
 @media only screen and ( max-width: 40em ) /* 640 */
 {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #nav {
+        width: 100%;
+        background: green;
+    }
+    #header {
+        color: #E7E7E7;
+        display: flex;
+    }
     ul {
         margin: 3px;
         padding: 10px;
@@ -166,11 +158,11 @@ body {
         position: relative;
     }
 
-        #nav:not( :target ) > a:first-of-type,
-        #nav:target > a:last-of-type
-        {
-            display: block;
-        }
+    #nav:not( :target ) > a:first-of-type,
+    #nav:target > a:last-of-type
+    {
+        display: block;
+    }
  
     /* first level */
  
