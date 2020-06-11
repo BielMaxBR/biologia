@@ -2,33 +2,19 @@ body {
     font-family: 'Ubuntu', sans-serif; 
     background-color: #E7E7E7;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 #nav
 {
     /* container */
-    background-clip: green;
+    /* background-clip: green; */
 }
     #nav > a
     {
         display: none;
     }
 
-    #nav li
-    {
-        position: relative;
-    }
- 
-    /* first level */
- 
-    #nav > ul
-    {
-        height: 3.75em;
-    }
-        #nav > ul > li
+        #nav ul li
         {
             width: 25%;
             height: 100%;
@@ -48,8 +34,139 @@ body {
             display: block;
         }
 
+@media only screen and ( min-width: 641px ) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    #ul{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        /* gap: 8px; */
+        list-style: none; 
+    }
+    #text {
+        margin: 10px;
+        display: none;
+        grid-template-columns:1fr;
+        gap: 8px;
+        list-style: none;  
+    }
+
+    #ul ul:hover #text { display: grid; }
+
+    #text a {
+        display: block;
+        text-decoration: none;
+        color: #E2144A;
+        background: #fff;
+        padding: 5px;
+        border: 1px solid #ccc; 
+    }
+    #ul ul {
+        background-color: #00A000;
+
+    }
+    ul li 
+        {
+        display: flex;
+        list-style: none; 
+        float: center;
+    }
+
+    #ul li a {
+                
+        /* border: 1px solid grey; */
+
+        font-weight:bolder;
+        height: 32px;
+
+        /* padding: 6px 6px; */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content:center;
+
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    #ul a {
+        background-color: green;
+        
+        color: white;
+        border: 1px none grey;
+
+        font-weight: bold;
+        height: 32px;
+
+        /* padding: 6px 6px; */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: space-around;
+
+        text-decoration: none;
+        text-align: center;
+    }
+    /* ul li
+         {
+             display: flex;
+            align-content: center;
+            flex: 1;
+        }
+
+    ul {
+        background-color: green;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+
+    }
+    ul li a {
+
+        align-items: center;
+        font-weight: bold;
+        height: 32px;
+
+        padding: 6px 6px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+        text-align: center;
+    } */
+  
+}
 @media only screen and ( max-width: 40em ) /* 640 */
 {
+    ul {
+        margin: 3px;
+        padding: 10px;
+        list-style: none;
+        align-content: center;
+        background: #fff;
+        /* width: 150px; */
+
+    }
+
+    ul li {
+        background-color: #f5f5f5;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: table;
+        /* padding: 5px; */
+        /* border: 3px solid #ccc;  */
+    }
     #nav
     {
         position: relative;
