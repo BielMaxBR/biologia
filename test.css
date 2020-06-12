@@ -234,10 +234,10 @@ a {
         background: green;
     }
     #header, #header-title {
-        color: #E7E7E7;
+        color: white;
     }
     #header {
-        display: inline-block;
+        /* display: inline-block; */
         float: left;
     }
     
@@ -299,4 +299,46 @@ a {
     {
         position: static;
     }
+}
+
+form {
+    margin: 12px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction:column;
+    background: white;
+    flex-wrap: wrap;
+}
+
+form p { 
+    display: block;
+    max-width: 80%;
+}
+form .questao {
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #E7E7E7;
+}
+
+
+
+form .interior {
+
+    margin-top: 18px;
+    justify-content: center;
+}
+
+form .interior h3 {
+    display: inline;
+}
+form .res input {
+    display: inline;
+
+    
 }
