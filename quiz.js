@@ -10,6 +10,7 @@ for(var i = 0; i < dados.length; i++){
 }
 console.log(hash)
 
+nota = "-1"
 
 notaH1 = document.getElementById('nota')
 
