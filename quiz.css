@@ -337,25 +337,26 @@ form .questao {
 }
 
 
-form .res1 {
-
+form .res {
     margin-top: 18px;
     justify-content: center;
 }
-form .res1 div {
+form .res div {
 
+    border: gray solid;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     white-space: normal;
     margin-bottom: 2%;
 } 
-form .res1 h3 {
+form .res h3 {
     display: inline;
 }
 
-form .res1 input {
+form .res input {
     display: inline;
-    transform: scale(1.3);
+    transform: scale(1.2);
     margin-right: 1%;
+    position:relative;
 }

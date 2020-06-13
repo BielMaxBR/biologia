@@ -300,3 +300,14 @@ a {
         position: static;
     }
 }
+p { 
+    display: block;
+    max-width: 80%;
+    flex-wrap: wrap;
+    white-space:normal;
+    margin: auto;
+
+}
+h1 {
+    text-align: center;
+}
