@@ -1,6 +1,25 @@
 var url   = window.location.search.replace("?", "");
 var dados = url.split("&");
 
+var respostas = ["a","b","d","a","c","c","d","b","a","b"]
+
+var nota = 0
+
+function corrigir(resposta, correta) {
+
+
+    for (var i = 0; i < correta.length; i++) {
+        var resNum = i+1
+        var res1 = resposta["q-"+resNum]
+        var res2 = correta[i]
+
+        if (res1 == res2) {
+            nota += 1
+        }
+    }
+    return nota
+}
+
 var hash = {}
 for(var i = 0; i < dados.length; i++){
     var parametro = dados[i].split("=");
@@ -10,10 +29,11 @@ for(var i = 0; i < dados.length; i++){
 }
 console.log(hash)
 
-nota = "-1"
+var nota = corrigir(hash, respostas)
 
+console.log(nota)
 notaH1 = document.getElementById('nota')
 
-if (notaH1) {
+if (notaH1 && nota) {
     notaH1.innerHTML = 'Você tirou ' + nota.toString() + ' de 10!'
 }
