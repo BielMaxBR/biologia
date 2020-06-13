@@ -7,7 +7,6 @@ var nota = 0
 
 function corrigir(resposta, correta) {
 
-
     for (var i = 0; i < correta.length; i++) {
         var resNum = i+1
         var res1 = resposta["q-"+resNum]
@@ -16,6 +15,7 @@ function corrigir(resposta, correta) {
         if (res1 == res2) {
             nota += 1
         }
+        
     }
     return nota
 }
@@ -29,11 +29,8 @@ for(var i = 0; i < dados.length; i++){
 }
 console.log(hash)
 
-var nota = corrigir(hash, respostas)
+nota = corrigir(hash, respostas)
 
-console.log(nota)
+console.log('a nota é:',nota)
 notaH1 = document.getElementById('nota')
-
-if (notaH1 && nota) {
-    notaH1.innerHTML = 'Você tirou ' + nota.toString() + ' de 10!'
-}
+notaH1.innerHTML = 'Você tirou ' + nota + ' de 10!'
