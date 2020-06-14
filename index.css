@@ -38,7 +38,6 @@ a {
 
     #nav ul li
         {
-            width: 25%;
             height: 100%;
             float: left;
         }
@@ -154,7 +153,6 @@ a {
 
     #nav ul li
         {
-            width: 60%;
             height: 100%;
             float: left;
             font-size: 12px;
@@ -354,8 +352,11 @@ p {
 h1 {
     text-align: center;
 }
-@media only screen and ( min-width: 325px ) {
+@media only screen and ( min-width: 310px ) {
     li#text {
         margin-right: 15px;
+    }
+    .head h2 {
+        font-size: 18px;
     }
 }
