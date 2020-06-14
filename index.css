@@ -151,6 +151,11 @@ a {
         list-style: none; 
     }
 
+    #header-title {
+        background-color:rgb(0, 107, 0);
+        padding: 0;
+    }
+
     #nav ul li
         {
             height: 100%;
@@ -341,18 +346,26 @@ a {
         position: static;
     }
 }
-p { 
+p, h1{ 
     display: block;
     max-width: 80%;
     flex-wrap: wrap;
     white-space:normal;
     margin: auto;
+    /* text-align: center; */
+    background-color: white;
 
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-h1 {
-    text-align: center;
+
+p {
+    margin-bottom: 5px;
+    
 }
-@media only screen and ( min-width: 310px ) {
+
+@media only screen and ( max-width: 320px ) {
     li#text {
         margin-right: 15px;
     }
