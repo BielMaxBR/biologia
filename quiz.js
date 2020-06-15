@@ -1,7 +1,7 @@
 var url   = window.location.search.replace("?", "");
 var dados = url.split("&");
 
-var respostas = ["a","b","d","a","c","c","d","b","a","b"]
+var respostas = ["d","b","d","a","c"]
 
 var nota = 0
 
@@ -13,7 +13,7 @@ function corrigir(resposta, correta) {
         var res2 = correta[i]
 
         if (res1 == res2) {
-            nota += 1
+            nota += 2
         }
         
     }
@@ -30,7 +30,9 @@ for(var i = 0; i < dados.length; i++){
 console.log(hash)
 
 nota = corrigir(hash, respostas)
-
+var nome = hash["name"]
 console.log('a nota é:',nota)
 notaH1 = document.getElementById('nota')
-notaH1.innerHTML = 'Você tirou ' + nota + ' de 10!'
+notaH1.innerHTML = 'Você tirou ' + nota + ' !'
+nomeH1 = document.getElementById('nome')
+nomeH1.innerHTML = 'Parabéns! ' + nome

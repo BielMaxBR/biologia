@@ -356,3 +356,6 @@ form .res input {
     margin-right: 1%;
     position:relative;
 }
+#nome, #nota {
+    text-align: center;
+}
