@@ -1,0 +1,13 @@
+<div class="exercicios__lista__item">
+                                        <h3 class="exercicios__lista__item-title">Questão 2</h3>
+                                        <p style="text-align: justify;">Diversas características diferenciam o DNA do RNA, sendo uma delas a cadeia. A respeito da cadeia de RNA, marque a alternativa correta:</p>
+
+<p style="text-align: justify;">a) A cadeia de RNA é dupla e enrolada como uma escada helicoidal.</p>
+
+<p style="text-align: justify;">b) A cadeia de RNA é dupla e, diferentemente da cadeia de DNA, é linear.</p>
+
+<p style="text-align: justify;">c) A cadeia de RNA é única e pode enrolar-se sobre si mesma.</p>
+
+<p style="text-align: justify;">d) A cadeia de RNA é única e circular.</p>
+
+                                    </div>
