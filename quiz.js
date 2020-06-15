@@ -1,7 +1,7 @@
 var url   = window.location.search.replace("?", "");
 var dados = url.split("&");
 
-var respostas = ["d","c","d","a","c"]
+var respostas = ["d","c","a","a","c"]
 
 var nota = 0
 
@@ -31,7 +31,12 @@ console.log(hash)
 
 nota = corrigir(hash, respostas)
 var nome = hash["name"]
-console.log('a nota é:',nota)
+
+while (nome.indexOf("+") != -1)
+    nome = nome.replace("+", " ");
+
+
+console.log('a nota é:',nota, nome)
 notaH1 = document.getElementById('nota')
 notaH1.innerHTML = 'Você tirou ' + nota + ' !'
 nomeH1 = document.getElementById('nome')
