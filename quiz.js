@@ -43,7 +43,8 @@ nomeH1 = document.getElementById('nome')
 nomeH1.innerHTML = 'Parabéns! ' + nome
 
 const urlServer = "https://notsans.herokuapp.com/bio"
-const urlPost = "http://httpbin.org/post"
+
+const data = hash.nota = nota
 
 fetch(
     urlServer,{
