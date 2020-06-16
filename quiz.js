@@ -30,8 +30,9 @@ for(var i = 0; i < dados.length; i++){
 console.log(hash)
 
 nota = corrigir(hash, respostas)
-var nome = hash["name"]
-
+var nome = hash["name"];
+var nome = decodeURIComponent(nome)
+hash["name"] = nome
 while (nome.indexOf("+") != -1)
     nome = nome.replace("+", " ");
 
