@@ -41,3 +41,10 @@ notaH1 = document.getElementById('nota')
 notaH1.innerHTML = 'Você tirou ' + nota + ' !'
 nomeH1 = document.getElementById('nome')
 nomeH1.innerHTML = 'Parabéns! ' + nome
+
+const urlServer = 'https://3333-d2d47888-f1af-4d68-a9e4-3a3926d49652.ws-us02.gitpod.io/bio'
+const urlPost = "http//httpbin.org/post"
+
+fetch(urlPost, { method: "Post", body: "tulio=faria" })
+  .then(res => res.json())
+  .then(json => console.log(json)).catch((e)=>console.log(e))
