@@ -39,7 +39,11 @@ while (nome.indexOf("+") != -1) {
 
 hash["name"] = nome
 
-
+if (nota == 10) {
+    var parabens = document.createElement("div")
+    parabens.innerHTML = '<a href="https://www.youtube.com/watch?v=7Bn3KoQuw7o">surpresa ak</a>'
+    document.body.appendChild(parabens)
+}
 console.log('a nota é:',nota, nome)
 notaH1 = document.getElementById('nota')
 notaH1.innerHTML = 'Você tirou ' + nota + ' !'
