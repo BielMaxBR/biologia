@@ -1,7 +1,7 @@
 var url   = window.location.search.replace("?", "");
 var dados = url.split("&");
 
-var respostas = ["d","c","a","a","c"]
+var respostas = ["d","c","a","b","c"]
 
 var nota = 0
 
@@ -30,11 +30,15 @@ for(var i = 0; i < dados.length; i++){
 console.log(hash)
 
 nota = corrigir(hash, respostas)
+var nome = hash["name"]
 
+var nome = decodeURIComponent(nome)
 while (nome.indexOf("+") != -1) {
     nome = nome.replace("+", " ");
 }
-var nome = hash["name"]
+
+hash["name"] = nome
+
 
 console.log('a nota é:',nota, nome)
 notaH1 = document.getElementById('nota')
@@ -42,9 +46,20 @@ notaH1.innerHTML = 'Você tirou ' + nota + ' !'
 nomeH1 = document.getElementById('nome')
 nomeH1.innerHTML = 'Parabéns! ' + nome
 
-const urlServer = 'https://3333-d2d47888-f1af-4d68-a9e4-3a3926d49652.ws-us02.gitpod.io/bio'
-const urlPost = "http//httpbin.org/post"
+const urlServer = "https://notsans.herokuapp.com/bio"
 
-fetch(urlPost, { method: "Post", body: "tulio=faria" })
-  .then(res => res.json())
-  .then(json => console.log(json)).catch((e)=>console.log(e))
+const data = hash.nota = nota
+
+fetch(
+    urlServer,{
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          method: "Post",
+          mode:"cors",
+          body: JSON.stringify(hash),
+})
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch((e)=>console.log(e))
