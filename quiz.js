@@ -30,11 +30,11 @@ for(var i = 0; i < dados.length; i++){
 console.log(hash)
 
 nota = corrigir(hash, respostas)
-var nome = hash["name"]
 
-while (nome.indexOf("+") != -1)
+while (nome.indexOf("+") != -1) {
     nome = nome.replace("+", " ");
-
+}
+var nome = hash["name"]
 
 console.log('a nota é:',nota, nome)
 notaH1 = document.getElementById('nota')
