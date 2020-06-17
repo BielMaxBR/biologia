@@ -1,7 +1,7 @@
 var url   = window.location.search.replace("?", "");
 var dados = url.split("&");
 
-var respostas = ["d","c","a","b","c"]
+var respostas = ["d","c","d","b","c"]
 
 var nota = 0
 
